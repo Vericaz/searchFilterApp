@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/gallery.css" /> -->
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+  <body>
+    <!--filter buttons -->
+    <div class="row">
+      <div
+        class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap"
+      >
+        <a
+          href="#"
+          class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+          data-filter="all"
+        >
+          all</a
+        >
+        <a
+          href="#"
+          class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+          data-filter="salads"
+        >
+          salads</a
+        >
+
+        <a
+          href="#"
+          class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+          data-filter="pizza"
+        >
+          pizza</a
+        >
+
+        <a
+          href="#"
+          class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+          data-filter="burgers"
+        >
+          burgers</a
+        >
+        <a
+          href="#"
+          class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2"
+          data-filter="pasta"
+        >
+          pasta</a
+        >
+      </div>
+    </div>
+    <!-- search box -->
+    <div class="row">
+      <div class="col-10 mx-auto col-md-6">
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text search-box" id="search-icon"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="item...."
+              id="search-item"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--end of filter buttons -->
+    <div class="row" class="store-items" id="store-items">
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pasta"
+        data-item="pasta"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pasta-1.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Macaroni pasta</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item salad"
+        data-item="salads"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/salad-1.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Egg salad</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item burger"
+        data-item="burger"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/burger-1.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Bacon burger</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pizza"
+        data-item="pizza"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pizza-1.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Jumbo pepperoni pizza</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pasta"
+        data-item="pasta"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pasta-2.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Taliateli pasta</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item salad"
+        data-item="salad"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/salad-2.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Greek salad</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item burger"
+        data-item="burger"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/burger-2.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Cheeseburger</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pizza"
+        data-item="pizza"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pizza-2.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Vegan pizza</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pasta"
+        data-item="pasta"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pasta-3.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Spaghetti pasta</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item salad"
+        data-item="salad"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/salad-3.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Avocado salad</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item burger"
+        data-item="burger"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/burger-3.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Cheddar burger</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+      <!-- single item -->
+      <div
+        class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item pizza"
+        data-item="pizza"
+      >
+        <div class="card">
+          <div class="img-container">
+            <img
+              src="./img/pizza-3.jpg"
+              class="card-img-top store-img"
+              alt=""
+            />
+          </div>
+          <div class="card-body">
+            <div
+              class="card-text d-flex justify-content-between text-capitalize"
+            >
+              <h5>Pepperoni pizza slice</h5>
+            </div>
+          </div>
+        </div>
+        <!-- end of card-->
+      </div>
+      <!--end of single store item-->
+    </div>
+
+    <!-- modal-container -->
+    <div id="container-fluid" class="container-fluid">
+      <div class="row lightbox-container align-items-center">
+        <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+          <span class="lightbox-close">&times;</span>
+          <div class="lightbox-item"></div>
+          <span class="lightbox-control btnLeft"></span>
+          <span class="lightbox-control btnRight"></span>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/main-filter.js"></script> -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
