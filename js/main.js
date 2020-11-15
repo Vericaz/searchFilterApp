@@ -46,19 +46,20 @@ buttons.forEach((button) => {
 
 // Search filtering
 
-// function myFunction() {
-//     let input, filter, items, text, a, i, txtValue;
+function myFunction() {
+  let input, filter, cardContainer, cards, h5, title, i;
 
-//     input = document.getElementById('search-item');
-//     filter = input.value.toUpperCase();
-//     items = document.getElementById('store-items')
-//     text = document.getElementsByClassName("store-item")
+  input = document.getElementById("search-item");
+  filter = input.value.toUpperCase();
+  cardContainer = document.getElementById("store-items");
+  cards = cardContainer.getElementsByClassName("store-item");
 
-//     for (i=0; i <text.length; i++) {
-//         a = text[i].getElementsByTagName("h5")[o];
-//         txtValue = a.textContent || a.innerText;
-//         if (txtValue.toUpperCase().indexOf(filter)>-1 {
-//             text[i].style.display = ""
-//         } else )
-//     }
-// }
+  for (i = 0; i < cards.length; i++) {
+    title = cards[i].querySelector(".card-text h5.title");
+    if (title.innertext.toUpperCase().indexOf(filter) > -1) {
+      cards[i].style.display = "";
+    } else {
+      cards[i].style.display = "none";
+    }
+  }
+}
